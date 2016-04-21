@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/ribs.css" />
+		<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+		<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+		<!--[if IE]><script type="text/javascript" src="js/excanvas.js" ></script><![endif]-->
+		<script type="text/javascript" src="js/ribs.js"></script>
+
+		<script>
+			var mydata = [
+			{
+				"dsr":{"name":"Google","sfzjhm":"232103198903061222"},
+				"controlled":{"yh":28,"fc":5000,"cl":30000,"gs":2,"swDs":15,"swGs":2,"td":25},
+				"uncontrolled":{"yh":14,"fc":521,"cl":3,"gs":73,"swDs":15,"swGs":7,"td":0}
+			},{
+				"dsr":{"name":"Facebook","sfzjhm":"232103198903061222"},
+				"controlled":{"yh":19,"fc":523,"cl":5000,"gs":2,"swDs":15,"swGs":24,"td":2},
+				"uncontrolled":{"yh":20,"fc":121,"cl":422,"gs":5,"swDs":678,"swGs":7,"td":1}
+			},{
+				"dsr":{"name":"Alibaba(China)","sfzjhm":"232103198903061222"},
+				"controlled":{"yh":113,"fc":523,"cl":5000,"gs":2,"td":2},
+				"uncontrolled":{"yh":200,"fc":10,"cl":3,"swGs":7,"td":25}
+			},{
+				"dsr":{"name":"Amazon.com","sfzjhm":"232103198903061222"},
+				"controlled":{"yh":19,"fc":542,"cl":100,"gs":2,"swDs":15},
+				"uncontrolled":{"yh":20,"fc":10,"cl":3,"gs":5,"swDs":37}
+			},{
+				"dsr":{"name":"Tencent(China)","sfzjhm":"232103198903061222"},
+				"controlled":{"yh":3710,"fc":523,"cl":5000,"gs":2,"swDs":15,"swGs":24,"td":132},
+				"uncontrolled":{"yh":20,"fc":10,"swDs":15,"swGs":7,"td":25}
+			},{
+				"dsr":{"name":"Baidu(China)","sfzjhm":"232103198903061222"},
+				"controlled":{"yh":19,"fc":523,"cl":5000,"gs":2,"swDs":15,"swGs":24,"td":2},
+				"uncontrolled":{"yh":34,"fc":10,"cl":3,"gs":5,"swDs":15,"swGs":7,"td":25}
+			},{
+				"dsr":{"name":"eBay","sfzjhm":"232103198903061222"},
+				"controlled":{"yh":19,"gs":2,"swDs":15,"swGs":24,"td":2},
+				"uncontrolled":{"yh":20,"fc":10,"cl":3,"gs":5,"swDs":15,"swGs":7,"td":25}
+			},{
+				"dsr":{"name":"The Priceline Group","sfzjhm":"232103198903061222"},
+				"controlled":{"yh":19,"fc":523,"cl":5000,"gs":2,"swDs":15,"swGs":24},
+				"uncontrolled":{"yh":20,"fc":10,"cl":3,"swGs":7,"td":25}
+			},{
+				"dsr":{"name":"Yahoo!","sfzjhm":"232103198903061222"},
+				"controlled":{"yh":19,"fc":523,"cl":5000,"swDs":15,"swGs":24,"td":2},
+				"uncontrolled":{"fc":10,"cl":3,"gs":5,"swDs":15,"swGs":7,"td":25}
+			},{
+				"dsr":{"name":"JD.com(China)","sfzjhm":"232103198903061222"},
+				"controlled":{"yh":19,"fc":523,"gs":2,"swDs":15,"swGs":24,"td":2},
+				"uncontrolled":{"yh":20,"fc":10,"swDs":15,"swGs":7,"td":25}
+			},{
+				"dsr":{"name":"Twitter","sfzjhm":"232103198903061222"},
+				"controlled":{"yh":19,"fc":523,"cl":5000,"gs":2,"swDs":15},
+				"uncontrolled":{"yh":20,"fc":10,"cl":3,"gs":5,"swDs":15,"swGs":7,"td":25}
+			},{
+				"dsr":{"name":"Netflix","sfzjhm":"232103198903061222"},
+				"controlled":{"yh":19,"fc":523,"cl":5000,"gs":2,"swDs":15,"td":2},
+				"uncontrolled":{"yh":20,"fc":10,"cl":3,"swGs":7,"td":25}
+			},{
+				"dsr":{"name":"Linkedln","sfzjhm":"232103198903061222"},
+				"controlled":{"yh":19,"fc":523,"cl":5000,"swDs":15,"swGs":24,"td":2},
+				"uncontrolled":{"yh":20,"fc":10,"gs":5,"swDs":15,"swGs":7,"td":25}
+			},{
+				"dsr":{"name":"Yahoo!Japan","sfzjhm":"232103198903061222"},
+				"controlled":{"yh":19,"fc":523,"gs":2,"swDs":15,"swGs":24,"td":2},
+				"uncontrolled":{"yh":20,"fc":10,"swDs":15,"swGs":7,"td":25}
+			},{
+				"dsr":{"name":"Naver(South Korea)","sfzjhm":"232103198903061222"},
+				"controlled":{"yh":19,"gs":2,"swDs":15,"swGs":24,"td":2},
+				"uncontrolled":{"yh":20,"fc":10,"swDs":15,"swGs":7,"td":25}
+			},{
+				"dsr":{"name":"Rakuten(Japan)","sfzjhm":"232103198903061222"},
+				"controlled":{"yh":19,"fc":523,"cl":100,"gs":2,"swDs":15,"swGs":24,"td":2},
+				"uncontrolled":{"yh":20,"fc":10,"swDs":15,"swGs":7,"td":25}
+			},{
+				"dsr":{"name":"TripAdvisor","sfzjhm":"232103198903061222"},
+				"controlled":{"yh":19,"fc":523,"cl":5000,"gs":2,"swGs":24,"td":2},
+				"uncontrolled":{"yh":20,"fc":10,"swDs":15,"swGs":7,"td":25}
+			},{
+				"dsr":{"name":"Equinix","sfzjhm":"232103198903061222"},
+				"controlled":{"yh":19,"fc":523,"cl":35,"gs":2,"swDs":15,"swGs":24,"td":2},
+				"uncontrolled":{"yh":20,"fc":1000,"swDs":15,"swGs":7,"td":25}
+			},{
+				"dsr":{"name":"NetEase(China)","sfzjhm":"232103198903061222"},
+				"controlled":{"yh":19,"fc":523,"cl":10,"gs":2,"swDs":15,"swGs":24,"td":2},
+				"uncontrolled":{"yh":20,"fc":10,"swDs":15,"swGs":7,"td":25}
+			},{
+				"dsr":{"name":"Vipshop(China)","sfzjhm":"232103198903061222"},
+				"controlled":{"yh":19,"fc":523,"cl":5000,"gs":2,"swDs":15,"swGs":24,"td":2},
+				"uncontrolled":{"yh":20,"fc":10,"swDs":15,"swGs":7,"td":25}
+			}
+			];
+			$(function() {
+				//首页
+				$(".ribs").ribs(mydata);
+				
+			});
+		</script>
+	</head>
+
+	<body>
+
+		<!--财产首页 排骨图-->
+		<div class="ribs">
+		</div>
+	</body>
+
+</html>
