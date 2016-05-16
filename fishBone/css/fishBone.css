@@ -38,28 +38,27 @@ color: #767676;
 .fishBone .item .title{
 	border-left:none;
 }
-.fishBone .item .title .title-left{
+.fishBone .item .title .title-left,
+.fishBone .item .title .title-center,
+.fishBone .item .title .title-right
+{
 	display:inline-block;
-	width:15px;
-	line-height: 2.1em;
-	background: url("../img/title.png") no-repeat 0 0;
-	font-size: 14px;
-}
-.fishBone .item .title .title-center{
-	display:inline-block;
-	background: url("../img/title.png") repeat-x 0 -600px;
+	line-height: 2em;
 	font-size: 15px;
 	font-weight:bold;
 	font-family:'微软雅黑';
-	line-height: 2.1em;
 	color: white;
 }
-.fishBone .item .title .title-right{
-	display:inline-block;
+.fishBone .item .title .title-left{
 	width:15px;
-	line-height: 2.1em;
+	background: url("../img/title.png") no-repeat 0 0;
+}
+.fishBone .item .title .title-center{
+	background: url("../img/title.png") repeat-x 0 -600px;
+}
+.fishBone .item .title .title-right{
+	width:15px;
 	background: url("../img/title.png") no-repeat 0 -1200px;
-	font-size: 14px;
 }
 .fishBone .item .title{
 	display: block;
