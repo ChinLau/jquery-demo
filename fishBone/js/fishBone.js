@@ -86,7 +86,7 @@ $.fn.fishBone = function(data) {
     /** .title-center背景纵坐标，600px开始，见图片title.png*/
     function getTitleCenterY(i) {
         var length = colors.length;
-        var y = -598;//图片位置
+        var y = -600;//图片位置
         if (i <= length - 1) {
             y += -i * 60;
         } else {
@@ -129,7 +129,7 @@ $.fn.fishBone = function(data) {
                 $.each(this, function(name, value) {
                     if (name == '审理时间') {
                         var li = $("<li class='line-first'>" + value + "</li>")
-                                    .css('background-position-y', (parseInt(lineFirstY)+9)+"px");//9是原计算结果的偏移量，显示位置正合适
+                                    .css('background-position', "0 "+(parseInt(lineFirstY)+9)+"px");//9是原计算结果的偏移量，显示位置正合适
                         li.appendTo(ul);
                         return;
                     }
@@ -137,9 +137,9 @@ $.fn.fishBone = function(data) {
                 $.each(this, function(name, value) {
                     if (name == '案号') {
                         var li = $("<li class='title'></li>");
-                        var titleLeft =  $("<span class='title-left'>&nbsp;</span>").css('background-position-y',titleLeftY);
-                        var titleCenter =  $("<span class='title-center'>"+value+"</span>").css('background-position-y',titleCenterY);
-                        var titleRight =  $("<span class='title-right'>&nbsp;</span>").css('background-position-y',titleRightY);
+                        var titleLeft =  $("<span class='title-left'>&nbsp;</span>").css('background-position',"0 "+titleLeftY);
+                        var titleCenter =  $("<span class='title-center'>"+value+"</span>").css('background-position',"0 "+titleCenterY);
+                        var titleRight =  $("<span class='title-right'>&nbsp;</span>").css('background-position',"0 "+titleRightY);
                         li.append(titleLeft).append(titleCenter).append(titleRight);
                         li.appendTo(ul);
                         return;
@@ -158,9 +158,9 @@ $.fn.fishBone = function(data) {
                 $.each(this, function(name, value) {
                     if (name == '案号') {
                         var li = $("<li class='title'></li>");
-                        var titleLeft =  $("<span class='title-left'>&nbsp;</span>").css('background-position-y',titleLeftY);
-                        var titleCenter =  $("<span class='title-center'>"+value+"</span>").css('background-position-y',titleCenterY);
-                        var titleRight =  $("<span class='title-right'>&nbsp;</span>").css('background-position-y',titleRightY);
+                        var titleLeft =  $("<span class='title-left'>&nbsp;</span>").css('background-position',"0 "+titleLeftY);
+                        var titleCenter =  $("<span class='title-center'>"+value+"</span>").css('background-position',"0 "+titleCenterY);
+                        var titleRight =  $("<span class='title-right'>&nbsp;</span>").css('background-position',"0 "+titleRightY);
                         li.append(titleLeft).append(titleCenter).append(titleRight);
                         li.appendTo(ul);
                         return;
@@ -169,7 +169,7 @@ $.fn.fishBone = function(data) {
                 $.each(this, function(name, value) {
                     if (name == '审理时间') {
                         var li = $("<li class='line-first'>" + value + "</li>")
-                        .css('background-position-y', (parseInt(lineFirstY)-33)+"px");//30是原计算结果的偏移量
+                        .css('background-position', "0 "+(parseInt(lineFirstY)-33)+"px");//30是原计算结果的偏移量
                         li.appendTo(ul);
                         return;
                     }
